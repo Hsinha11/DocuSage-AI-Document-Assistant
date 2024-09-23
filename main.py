@@ -72,7 +72,7 @@ def extract_text_from_pdf(uploaded_file):
 st.set_page_config(page_title="DocuSage")
 
 st.header("DocuSage")
-input = st.text_input("Input Prompt: ", key="input")
+input = st.text_area("Input Prompt:", key="input", height=150)
 uploaded_file = st.file_uploader("Choose an image or PDF (optional)...", type=["jpg", "jpeg", "png", "pdf"])
 
 content = None  # Initialize content to None
@@ -94,6 +94,7 @@ submit = st.button("Submit")
 ## If submit button is clicked
 if submit:
     response = get_gemini_response(input, content)
-    st.subheader("Response:")
+    # st.subheader("Response:")
     st.write(response)
+    content = None 
     # st.session_state.input = "" 
