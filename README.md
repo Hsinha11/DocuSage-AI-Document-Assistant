@@ -44,3 +44,4 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Acknowledgments
 - **Special thanks to the creators of the Google Generative AI for providing the powerful API used in this project.**
+## Leave a star ⭐ if you like this repository
